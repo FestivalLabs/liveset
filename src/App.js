@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MainVideo from "./MainVideo";
+import RecordContainer from "./RecordContainer/RecordContainer.js";
 
 function App() {
   return (
     <div className="App">
-      <MainVideo />
+      <MainVideo className="video" />
+      <RecordContainer className="record-container"/>
     </div>
   );
 }
