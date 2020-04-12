@@ -6,7 +6,7 @@ import RecordContainer from "./RecordContainer/RecordContainer.js";
 function App() {
   return (
     <div className="App">
-      {/* <MainVideo className="video" /> */}
+      <MainVideo className="video" />
       <RecordContainer className="record-container"/>
     </div>
   );
