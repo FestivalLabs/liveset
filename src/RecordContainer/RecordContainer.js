@@ -1,5 +1,7 @@
 import React from 'react';
 import { ReactMic } from 'react-mic';
+import PlayTrack from './PlayTrack';
+import { API_HOST } from '../config';
  
 export default class RecordContainer extends React.Component {
   constructor(props) {
@@ -23,16 +25,28 @@ export default class RecordContainer extends React.Component {
   }
  
   onData(recordedBlob) {
-    console.log('chunk of real-time data is: ', recordedBlob);
+    // console.log('chunk of real-time data is: ', recordedBlob);
   }
  
   onStop(recordedBlob) {
-    console.log('recordedBlob is: ', recordedBlob);
+    let formdata = new FormData();
+    formdata.append('soundBlob', recordedBlob["blob"],  'latest.webm');
+
+    var options = {
+      method: 'POST',
+      body: formdata,
+      headers: new Headers({
+        'enctype': 'multipart/form-data'
+      })
+    };
+
+    fetch(API_HOST + '/audio', options).catch(console.log).then(console.log);
   }
  
   render() {
     return (
       <div>
+        <PlayTrack />
         <ReactMic
           record={this.state.record}
           className="sound-wave"
