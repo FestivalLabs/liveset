@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './teamVideo.css';
+import './TeamVideo.css';
 
-function teamVideo() {
+function TeamVideo() {
   return (
-    <div className="teamVideo">
-      <header className="teamVideo-header">
-        <img src={logo} className="teamVideo-logo" alt="logo" />
-        <p>
-          Edit <code>src/teamVideo.js</code> and save to reload.
-        </p>
-        <a
-          className="teamVideo-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="">
+      <p> TeamVideo </p>
     </div>
-  );
+  )
 }
 
-export default teamVideo;
+export default TeamVideo;
+ 

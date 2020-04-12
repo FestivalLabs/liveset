@@ -1,26 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './master.css';
+import './Master.css';
 
-function master() {
+function Master() {
   return (
-    <div className="master">
-      <header className="master-header">
-        <img src={logo} className="master-logo" alt="logo" />
-        <p>
-          Edit <code>src/master.js</code> and save to reload.
-        </p>
-        <a
-          className="master-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="">
+      <p> Master </p>
     </div>
-  );
+  )
 }
 
-export default master;
+export default Master;
