@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.video {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
