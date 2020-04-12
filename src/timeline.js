@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './timeline.css';
 
-function timeline() {
+function Timeline() {
   return (
     <div className="timeline">
       <header className="timeline-header">
@@ -23,4 +23,4 @@ function timeline() {
   );
 }
 
-export default timeline;
+export default Timeline;

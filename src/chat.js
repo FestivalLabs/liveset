@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './chat.css';
+import './Chat.css';
 
-function chat() {
+function Chat() {
   return (
     <div className="chat">
       <header className="chat-header">
@@ -23,4 +23,4 @@ function chat() {
   );
 }
 
-export default chat;
+export default Chat;

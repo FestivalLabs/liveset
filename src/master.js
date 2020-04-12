@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './master.css';
+import './Master.css';
 
-function master() {
+function Master() {
   return (
     <div className="master">
       <header className="master-header">
@@ -23,4 +23,4 @@ function master() {
   );
 }
 
-export default master;
+export default Master;

@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './teamVideo.css';
+import './TeamVideo.css';
 
-function teamVideo() {
+function TeamVideo() {
   return (
     <div className="teamVideo">
       <header className="teamVideo-header">
@@ -23,4 +23,4 @@ function teamVideo() {
   );
 }
 
-export default teamVideo;
+export default TeamVideo;
