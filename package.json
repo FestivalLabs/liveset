@@ -1,17 +1,19 @@
 {
   "name": "liveset",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@daily-co/daily-js": "^0.9.987",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.1.4",
     "react": "^16.13.1",
     "react-audio-spectrum": "^0.1.0",
     "react-dom": "^16.13.1",
     "react-mic": "^12.4.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +35,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
